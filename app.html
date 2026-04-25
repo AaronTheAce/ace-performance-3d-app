@@ -1,0 +1,66 @@
+﻿<!-- Minor AI-assisted debugging used during development for script loading
+and Three.js integration issues. Final structure implemented by Aaron W-G. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ACE Performance 3D – App</title>
+  <link rel="stylesheet" href="css/StyleSheet1.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="media/logo-header.png"
+           alt="ACE Performance Logo"
+           class="logo-img">
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="app.html" class="active">3D App</a>
+      <a href="about.html">About</a>
+      <a href="references.html">References</a>
+      <a href="statement.html">Originality</a>
+      <a href="submission.html">Submission</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="viewer-panel">
+      <div id="viewer"></div>
+      <p class="viewer-caption">
+        Use the controls on the right to switch models, adjust the lighting, change camera views
+        and trigger animations.
+      </p>
+    </section>
+
+    <aside class="controls-panel">
+      <h2>Controls</h2>
+
+      <h3>Models</h3>
+      <button data-model="protein_tub">Protein Tub</button>
+      <button data-model="prevail_tub">PRE-VAIL Tub</button>
+      <button data-model="shaker">Shaker Bottle</button>
+
+      <h3>View</h3>
+      <button id="btn-wireframe">Toggle Wireframe</button>
+      <button id="btn-next-camera">Next Camera Angle</button>
+
+      <h3>Lighting</h3>
+      <button id="btn-toggle-light">Toggle Spotlight</button>
+
+      <h3>Animation</h3>
+      <button id="btn-spin">Spin Model</button>
+
+      <h3>Model Description</h3>
+      <p id="model-description">
+        The default model is the ACE Performance protein tub, representing a high-protein
+        supplement targeted at strength athletes.
+      </p>
+    </aside>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

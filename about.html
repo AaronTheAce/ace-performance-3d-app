@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ACE Performance 3D – About</title>
+  <link rel="stylesheet" href="css/StyleSheet1.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="logo">
+    <img src="media/logo-header.png"
+         alt="ACE Performance Logo"
+         class="logo-img">
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="app.html">3D App</a>
+    <a href="about.html">About</a>
+    <a href="references.html">References</a>
+    <a href="statement.html">Originality</a>
+    <a href="submission.html">Submission</a>
+  </nav>
+</header>
+
+
+
+  <main class="content">
+    <h1>About the ACE Performance 3D Application</h1>
+
+    <section>
+      <h2>Concept and Brand</h2>
+      <p>
+        The ACE Performance 3D App is a fictional sports supplement brand targeted at strength athletes and powerlifters. 
+        The three main products, the protein container, the shaker bottle, and the energy drink bottle, 
+        were selected as they are recognizable objects in the fitness industry and work well with 3D modeling.
+      </p>
+    </section>
+
+    <section>
+      <h2>3D Modelling Process</h2>
+      <p>
+        The three assets were created in [Blender / 3ds Max] with a focus on efficient geometry and clean topology. 
+        The primitive shapes (cylinders and cubes) were enhanced with edge loops and bevels to give them 
+        recognisable silhouettes and keep the polygon count low enough to render in real-time in the browser.
+      </p>
+      <p>
+       The materials and textures were created using brand-inspired color schemes and label designs. 
+       The model consists of a base material for the container and a separate texture for the product label. 
+       This is done so that content swapping is possible in the future using JavaScript.
+      </p>
+    </section>
+
+    <section>
+      <h2>Web Technologies Used</h2>
+      <p>
+        The 3D App utilizes HTML5, CSS3, and JavaScript as the core development tools. Three.js is used as the 
+        WebGL abstraction layer for loading and rendering the GLB models, as well as for defining the 
+        lighting and multiple camera positions. Custom JavaScript functions are used for swapping the models, 
+        enabling the wireframe view, and changing the camera view and spin animation.
+      </p>
+      <p>
+        A responsive layout is implemented using CSS grid and flexbox, ensuring that the viewer and 
+        controls remain usable across a range of screen sizes.
+      </p>
+    </section>
+
+    <section>
+      <h2>Usability and Accessibility Considerations</h2>
+      <p>
+        The UI organises controls into logical groups (Model, View, Lighting, Animation) and provides consistent button styling.
+        The dark theme with high contrast accent colors is intended to be easy to read without competing with the 3D content.
+      </p>
+      <p>
+        Semantic HTML elements (such as &lt;header&gt;, &lt;main&gt;, &lt;section&gt; and &lt;nav&gt;) 
+        are used throughout, and all interactive controls are implemented as &lt;button&gt; elements, 
+        making them keyboard-focusable by default. Text descriptions of each model are provided to support 
+        users who may not be able to fully perceive the 3D content.
+      </p>
+    </section>
+
+    <section>
+      <h2>Deeper Understanding</h2>
+      <p>
+        To extend the work beyond the laboratory exercises, the project makes use of Three.js for loading and interaction 
+        of the models, swaps models using JavaScript, and adds additional camera controls, lighting, and animations. 
+        Other possible extensions could include a simple backend for user feedback or even custom effects 
+        using shaders for stylized rendering.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 ACE Performance 3D App – University of Sussex</p>
+  </footer>
+</body>
+</html>
